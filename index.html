@@ -6,14 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- google fonts -->
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -26,141 +25,103 @@
 
     <title>Capstone 1</title>
   </head>
-  <!-- <style>
-    * {
-      border: 1px solid red;
-    }
-  </style> -->
+
   <body>
     <!-- start of navbar -->
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-      <a href="" class="navbar-brand">Rio</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light border sticky-top custom-navbar"
+    >
+      <a class="navbar-brand ml-5" href="#">PiyongX-Codes</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#nav-main"
-        aria-controls="nav-main"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="nav-main">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item">
+            <a class="nav-link" href="#landing">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tools</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contancts">Contacts</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- end of navbar -->
-    <div class="container-fluid">
-      <!-- start of landing page -->
-      <section id="landing">
-        <div class="row justify-content-center text-center align-items-center">
-          <div
-            class="col-8 mt-5 pl-5 py-5 col-sm-8 mt-sm-5 col-md-8 mt-md-5 col-lg-6 mt-lg-5 col-xl-4"
-          >
-            <img
-              src="./images/img-pic.jpg"
-              class="rounded-circle img-fluid"
-              alt=""
-            />
-          </div>
-          <div
-            class="col-8 mt-5 pr-5 py-5 col-sm-8 mt-sm-5 col-md-8 mt-md-5 col-lg-6 mt-lg-5 col-xl-6"
-          >
-            <h1>Rio G. Sumandal</h1>
-            <h5>Full Stack Web Developer</h5>
-            <p>
-              <strong>Hello! I'm Rio,</strong> a passionate
-              <em>Web Developer</em> based in Philippines. I have a keen
-              interest in developing websites and I love to play computer games
-              especially mmorpgs. With 1 years of experience in web development
-              I've had the privilege to Create multiple websites for banking and
-              e-commerce. I believe in working hard pays off, and I'm dedicated
-              to become a professional senior full stack developer someday
-            </p>
-          </div>
+
+    <!-- start of landing page -->
+    <section id="landing">
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-4">
+          <h1 class="text mb-4 custom-h1">Welcome to My portfolio</h1>
+          <h5 class="text mb-4 custom-h5">JR. Full Stack Web Developer</h5>
+          <p class="text custom-p">
+            <strong>Hello! I'm Rio,</strong> this is my official portfolio
+            website to showcase all my works related to webdevelopment
+          </p>
+          <button type="button" class="btn btn-primary">Download CV</button>
         </div>
-      </section>
+
+        <div class="col-4">
+          <img src="/images/hero-pic.png" alt="" class="custom-img" />
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
       <!-- end of landing page -->
       <!-- start of my projects-->
       <section id="projects">
-        <div class="row justify-content-center p-5">
-          <h1 class="pt-5 text-center">My Projects</h1>
-          <div class="card-deck my-5 justify-content-center" id="my-project">
-            <div class="col-12 p-4 col-xl-4 p-4">
-              <div class="card">
-                <img
-                  src="./images/project-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <h5 class="card-title">Car Shop & Services Website</h5>
-                  <p class="card-text">
-                    I had the opportunity to design and develop a website for a
-                    local car shop specializing in automotive servicing and
-                    repairs. The goal was to create a user-friendly,
-                    informative, and visually appealing website that showcases
-                    the shop's services and attracts potential customers.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 p-4 col-xl-4 p-4">
-              <div class="card">
-                <img
-                  src="./images/project-2.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <h5 class="card-title">MMO Listing</h5>
-                  <p class="card-text">
-                    I designed and developed a game listing website aimed at
-                    providing gaming enthusiasts with a platform to discover and
-                    explore a wide range of games. The goal was to create a
-                    user-friendly and visually appealing website that showcases
-                    popular games across various platforms and genres.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 p-4 col-xl-4 p-4">
-              <div class="card">
-                <img
-                  src="./images/project-3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <h5 class="card-title">Food Ordering Web</h5>
-                  <p class="card-text">
-                    I designed and developed a food ordering website aimed at
-                    providing users with a convenient platform to order food
-                    from their favorite restaurants. The goal was to create a
-                    user-friendly and visually appealing website that simplifies
-                    the food ordering process and enhances the overall dining
-                    experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-center vh-100">
+          <div class="col-4">
+            <h3>1. Fitness Tracker</h3>
+            <p>
+              I developed a fitness tracker website, focusing on creating a
+              user-friendly platform that will enable individuals to monitor
+              their physical activities, set fitness goals,update,complete and
+              delete.
+            </p>
+            <a href="https://fitness-client-beta.vercel.app/">learn more</a>
+            <h3>2. Movie Catalog</h3>
+            <p>
+              I developed a fitness tracker website, focusing on creating a
+              user-friendly platform that will enable individuals to monitor
+              their physical activities, set fitness goals,update,complete and
+              delete.
+            </p>
+            <a href="https://fitness-client-beta.vercel.app/">learn more</a>
+            <h3>3. E-Commerce Web</h3>
+            <p>
+              I developed a fitness tracker website, focusing on creating a
+              user-friendly platform that will enable individuals to monitor
+              their physical activities, set fitness goals,update,complete and
+              delete.
+            </p>
+            <a href="https://fitness-client-beta.vercel.app/">learn more</a>
+          </div>   
+           <div class="col-4">
+            <img
+              src="/images/Projects.png"
+              alt=""
+              class="custom-img-projects1"
+            />
+          </div>       
         </div>
+      </div>
       </section>
       <!-- end of my projects -->
       <!-- start of tools -->

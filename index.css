@@ -1,68 +1,43 @@
-* {
-  font-family: "Montserrat", sans-serif;
+body {
+  background-color: #f8f9fa;
+  font-family: "Source Code Pro", monospace;
 }
-h1,
-h2 {
-  font-weight: 900;
-  font-size: 4rem;
+
+/* hero */
+.custom-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
-h3,
-h5 {
-  font-weight: 900;
+.text {
+  color: #212529;
+}
+.custom-h1 {
   font-size: 3rem;
-}
-p {
-  font-weight: 500;
-  font-size: 2rem;
-}
-nav {
   font-weight: 700;
+}
+.custom-h5 {
+  font-size: 1.5rem;
+}
+.custom-p {
   font-size: 1rem;
 }
-#projects {
-  background-color: black;
-}
-#projects h1 {
-  color: whitesmoke;
-}
-#projects h5 {
-  color: orange;
-}
-#tools h3 {
-  color: orange;
-  background-color: black;
-}
-#contact {
-  background-color: black;
-}
-#contact {
-  color: whitesmoke;
-}
-#message h4 {
-  font-weight: 900;
-  font-size: 2rem;
-}
-#message label {
+/* hero */
+/* navbar */
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem; /* Adjust font size for the brand */
   font-weight: 700;
 }
-#message input[type="text"],
-input[type="email"],
-#text-message {
-  font-size: 2rem;
+.custom-navbar .nav-link {
+  font-size: 1.2rem; /* Adjust font size for nav links */
+  font-weight: 600;
 }
-#message button {
-  font-size: 2rem;
-  color: whitesmoke;
-  background-color: orange;
-  border-color: white;
-  border-radius: 25px;
+/* navbar */
+/* projects */
+.custom-img-projects1 {
+  width: 570px;
+  height: 600px;
+  border: 2px solid #212529; /* You can adjust the border width if needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for desired shadow effect */
 }
-footer h6 {
-  font-weight: 900;
-  font-size: 2rem;
-  color: orange;
-}
-footer p {
-  font-weight: 200;
-  font-size: 2rem;
-}
+/* projects */
