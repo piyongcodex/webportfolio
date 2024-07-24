@@ -303,16 +303,13 @@
                 class="hidden"
                 style="display: none"
               />
-              <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
-              <div class="h-captcha mt-4" data-captcha="true"></div>
-            </form>
 
+              <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+              <div class="h-captcha mt-3" data-captcha="true"></div>
+            </form>
             <script>
               function validateCaptcha() {
-                const captchaResponse = document
-                  .querySelector(".h-captcha")
-                  .getAttribute("data-response");
-                if (!captchaResponse) {
+                if (hcaptcha.getResponse() === "") {
                   alert("Please complete the CAPTCHA.");
                   return false; // Prevent form submission
                 }
