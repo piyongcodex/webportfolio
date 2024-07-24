@@ -23,7 +23,7 @@
     <!-- external css -->
     <link rel="stylesheet" href="./index.css" />
 
-    <title>Capstone 1</title>
+    <title>Rio G. Suamndal - Web Portfolio</title>
   </head>
 
   <body>
@@ -53,7 +53,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills-tools">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contancts">Contacts</a>
@@ -65,19 +65,30 @@
 
     <!-- start of landing page -->
     <section id="landing">
-      <div class="row justify-content-center align-items-center vh-100">
-        <div class="col-4">
-          <h1 class="text mb-4 custom-h1">Welcome to My portfolio</h1>
-          <h5 class="text mb-4 custom-h5">JR. Full Stack Web Developer</h5>
-          <p class="text custom-p">
-            <strong>Hello! I'm Rio,</strong> this is my official portfolio
-            website to showcase all my works related to webdevelopment
-          </p>
-          <button type="button" class="btn btn-primary">Download CV</button>
-        </div>
-
-        <div class="col-4">
-          <img src="/images/hero-pic.png" alt="" class="custom-img" />
+      <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+          <!-- First column: Image -->
+          <div
+            class="col-12 col-md-6 order-1 order-md-2 text-center text-md-left mb-md-0"
+          >
+            <img
+              src="/images/hero-pic.png"
+              alt="Hero Image"
+              class="custom-img img-fluid"
+            />
+          </div>
+          <!-- Second column: Text and Button -->
+          <div
+            class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left mb-md-0"
+          >
+            <h1 class="text mb-4 custom-h1">Welcome to My portfolio</h1>
+            <h5 class="text mb-4 custom-h5">JR. Full Stack Web Developer</h5>
+            <p class="text custom-p">
+              <strong>Hello! I'm Rio,</strong> this is my official portfolio
+              website to showcase all my works related to web development.
+            </p>
+            <button type="button" class="btn btn-primary">Download CV</button>
+          </div>
         </div>
       </div>
     </section>
@@ -98,63 +109,161 @@
             <a href="https://fitness-client-beta.vercel.app/">learn more</a>
             <h3>2. Movie Catalog</h3>
             <p>
-              I developed a fitness tracker website, focusing on creating a
-              user-friendly platform that will enable individuals to monitor
-              their physical activities, set fitness goals,update,complete and
-              delete.
+              I developed a movie catalog web app allows admins to add and
+              delete movies, while registered users can browse the movie
+              collection and leave comments on their favorite films.
             </p>
             <a href="https://fitness-client-beta.vercel.app/">learn more</a>
             <h3>3. E-Commerce Web</h3>
             <p>
-              I developed a fitness tracker website, focusing on creating a
-              user-friendly platform that will enable individuals to monitor
-              their physical activities, set fitness goals,update,complete and
-              delete.
+              I developed a In the e-commerce platform, admins can update,
+              deactivate, and add products, as well as view the list of orders,
+              while users can add items to their cart, update their cart, and
+              proceed to fullfill the orders.
             </p>
             <a href="https://fitness-client-beta.vercel.app/">learn more</a>
-          </div>   
-           <div class="col-4">
+          </div>
+          <div class="col-4">
             <img
               src="/images/Projects.png"
               alt=""
               class="custom-img-projects1"
             />
-          </div>       
+          </div>
         </div>
-      </div>
       </section>
       <!-- end of my projects -->
       <!-- start of tools -->
-      <section id="tools">
+      <section id="skills-tools">
         <div class="row flex-column">
-          <h1 class="text-center">Tools</h1>
+          <h5 class="text-center">I have experience with these technologies</h5>
           <div class="row justify-content-center">
             <div class="mx-5 p-5 col-6 col-lg-4">
+              <!-- front - end -->
               <h3 class="text-center">Front End</h3>
               <div class="row justify-content-center text-center">
-                <div class="col-6">
-                  <img src="./images/html5.png" alt="" class="img-fluid" />
+                <div class="col-4">
+                  <img
+                    src="./images/html.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
                 </div>
-                <div class="col-6">
-                  <img src="./images/css3.png" alt="" class="img-fluid" />
+                <div class="col-4">
+                  <img
+                    src="./images/css.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
                 </div>
-                <div class="col-6 text-center">
-                  <img src="./images/bs.png" alt="" class="img-fluid" />
+                <div class="col-4 text-center">
+                  <img
+                    src="./images/bootstrap.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
                 </div>
               </div>
             </div>
-
+            <!-- back - end -->
             <div class="mx-5 p-5 col-6 col-lg-4">
-              <h3 class="text-center">Other Tools</h3>
+              <h3 class="text-center">Back End</h3>
+              <div class="row justify-content-center text-center">
+                <div class="col-3">
+                  <img
+                    src="./images/nodejs.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/npm.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/express-js.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/Firebase-Logo.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- full stack -->
+            <div class="m-3 p-5 col-6 col-lg-2">
+              <h3 class="text-center">Full Stack</h3>
+              <div class="row justify-content-center text-center">
+                <div class="col-12">
+                  <img
+                    src="./images/react-logo.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- database -->
+            <div class="m-3 p-5 col-6 col-lg-2">
+              <h3 class="text-center">Database</h3>
               <div class="row justify-content-center text-center">
                 <div class="col-6">
-                  <img src="./images/git.png" alt="" class="img-fluid" />
+                  <img
+                    src="./images/mongodb.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
                 </div>
                 <div class="col-6">
                   <img
-                    src="./images/sublime-text-3.png"
+                    src="./images/mysql.png"
                     alt=""
-                    class="img-fluid"
+                    class="img-fluid skill-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- other tools -->
+            <div class="m-3 p-5 col-6 col-lg-4">
+              <h3 class="text-center">Other tools</h3>
+              <div class="row justify-content-center text-center">
+                <div class="col-3">
+                  <img
+                    src="./images/relume.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/git.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/figma.png"
+                    alt=""
+                    class="img-fluid skill-img"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./images/canva.png"
+                    alt=""
+                    class="img-fluid skill-img"
                   />
                 </div>
               </div>
@@ -162,6 +271,7 @@
           </div>
         </div>
       </section>
+
       <!-- end of tools -->
 
       <!-- contacts -->

@@ -4,10 +4,22 @@ body {
 }
 
 /* hero */
+/* #landing,
+div {
+  border: 3px solid #000;
+} */
+@media (max-width: 575.98px) {
+  .custom-img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
 .custom-img {
-  width: 400px;
-  height: 400px;
+  width: 570px;
+  height: 570px;
   border-radius: 50%;
+  border: 2px solid #212529; /* You can adjust the border width if needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for desired shadow effect */
 }
 .text {
   color: #212529;
@@ -41,3 +53,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for desired shadow effect */
 }
 /* projects */
+/* skills & tools */
+.skill-img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.skill-img:hover {
+  transform: scale(1.2);
+}
+/* skills & tools */
