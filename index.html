@@ -23,6 +23,7 @@
     <!-- external css -->
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./index.js" />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <title>Rio G. Sumandal - Web Portfolio</title>
   </head>
@@ -240,22 +241,84 @@
                 />
               </a>
             </h4>
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              onsubmit="return validateCaptcha()"
+            >
+              <!-- add access key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="b8b2f88f-d8d5-4c88-840b-33952f063564"
+              />
+              <!-- add access key -->
+              <!-- email notif -->
+              <input type="hidden" name="subject" value="Email Received" />
+              <!-- email notif -->
+              <!-- defaul mail name -->
+              <input
+                type="hidden"
+                name="from_name"
+                value="Rio Sumandal Portfolio"
+              />
+              <!-- default mail name -->
 
-            <form id="contact-form">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" />
+                <label for="exampleInputName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputName"
+                  name="name"
+                />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" />
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  name="email"
+                />
+                <small id="emailHelp" class="form-text text-muted">
+                  We'll never share your email with anyone else.
+                </small>
               </div>
               <div class="form-group">
-                <label for="text-message">Message</label>
-                <textarea id="text-message" class="form-control"></textarea>
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send</button>
+
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
+              <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+              <div class="h-captcha mt-4" data-captcha="true"></div>
             </form>
+
+            <script>
+              function validateCaptcha() {
+                const captchaResponse = document
+                  .querySelector(".h-captcha")
+                  .getAttribute("data-response");
+                if (!captchaResponse) {
+                  alert("Please complete the CAPTCHA.");
+                  return false; // Prevent form submission
+                }
+                return true; // Allow form submission
+              }
+            </script>
           </div>
         </div>
       </div>
