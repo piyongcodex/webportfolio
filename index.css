@@ -41,20 +41,11 @@ body {
 /* projects */
 .custom-img-projects1 {
   width: 570px;
-  height: 600px;
+  height: 400px;
   border: 2px solid #212529; /* You can adjust the border width if needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for desired shadow effect */
 }
-#projects {
-  padding: 60px 0;
-}
-.custom-img-projects1 {
-  max-width: 100%;
-  height: auto;
-}
-.project {
-  text-align: left;
-}
+
 @media (max-width: 767px) {
   .vh-100 {
     height: auto;
